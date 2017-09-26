@@ -1,0 +1,80 @@
+/dev/ttyACM[0-9]* u:object_r:gx_fpd_device:s0
+/dev/goodix_fp* u:object_r:gx_fpd_device:s0
+/system/bin/fsck.ntfs u:object_r:fsck_exec:s0
+/system/bin/mount.ntfs u:object_r:toolbox_exec:s0
+# FIXME: invalid context u:object_r:regionalization_data_file:s0 - Are we missing a dependency?
+#/data/app-regional(/.*)? u:object_r:regionalization_data_file:s0
+/persist/data/gxfp(/.*)? u:object_r:gx_fpd_data_file:s0
+/system/bin/sensors.qcom u:object_r:sensors_exec:s0
+/data/system/fingerprint(/.*)? u:object_r:gx_fpd_data_file:s0
+/dev/socket/adjust_serialno(/.*)? u:object_r:mpctl_socket:s0
+# FIXME: invalid context u:object_r:sysfs_green:s0 - Are we missing a dependency?
+#/sys/devices/soc/leds-qpnp-.*/leds/blue/brightness u:object_r:sysfs_green:s0
+#/sys/devices/soc/leds-qpnp-.*/leds/green/brightness u:object_r:sysfs_green:s0
+/data/system/adjust_serialno(/.*)? u:object_r:mpctl_data_file:s0
+/system/vendor/bin/RIDLClient.exe u:object_r:RIDL_exec:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/dip u:object_r:dip_device:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/fsg u:object_r:modem_efs_partition_device:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/ssd u:object_r:ssd_device:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/fsc u:object_r:modem_efs_partition_device:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/boot u:object_r:boot_block_device:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/mdtp u:object_r:mdtp_device:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/misc u:object_r:misc_block_device:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/cache u:object_r:cache_block_device:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/config u:object_r:frp_block_device:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/system u:object_r:system_block_device:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/rawdump u:object_r:rawdump_block_device:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/persist u:object_r:persist_block_device:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/logdump u:object_r:logdump_partition:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/recovery u:object_r:recovery_block_device:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/userdata u:object_r:userdata_block_device:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/modemst1 u:object_r:modem_efs_partition_device:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/modemst2 u:object_r:modem_efs_partition_device:s0
+# FIXME: invalid context u:object_r:sysfs_flash:s0 - Are we missing a dependency?
+#/sys/devices/soc/qpnp-flash-led-.*/leds/led:torch_0/brightness u:object_r:sysfs_flash:s0
+# FIXME: invalid context u:object_r:sysfs_green:s0 - Are we missing a dependency?
+#/sys/devices/soc/qpnp-smbcharger-.*/leds/red/brightness u:object_r:sysfs_green:s0
+# FIXME: invalid context u:object_r:proc_tptest:s0 - Are we missing a dependency?
+#/proc/gmnode u:object_r:proc_tptest:s0
+/dev/gf66xx-spi u:object_r:gx_fpd_device:s0
+# FIXME: invalid context u:object_r:sdlog_exec:s0 - Are we missing a dependency?
+#/system/bin/sdlog u:object_r:sdlog_exec:s0
+/system/bin/gx_fpd u:object_r:gx_fpd_exec:s0
+# FIXME: invalid context u:object_r:versiond_exec:s0 - Are we missing a dependency?
+#/system/bin/versiond u:object_r:versiond_exec:s0
+/system/bin/gx_fpcmd u:object_r:gx_fpd_exec:s0
+/system/bin/lct_diag u:object_r:sectest_exec:s0
+# FIXME: invalid context u:object_r:resize2fs_exec:s0 - Are we missing a dependency?
+#/system/bin/resize2fs u:object_r:resize2fs_exec:s0
+# FIXME: invalid context u:object_r:ftmdaemon_exec:s0 - Are we missing a dependency?
+#/system/bin/ftmdaemon u:object_r:ftmdaemon_exec:s0
+# FIXME: invalid context u:object_r:oem_misc_block_device:s0 - Are we missing a dependency?
+#/dev/block/mmcblk0p28 u:object_r:oem_misc_block_device:s0
+/dev/block/mmcblk0p26 u:object_r:persist_block_device:s0
+# FIXME: invalid context u:object_r:resize_ext4_exec:s0 - Are we missing a dependency?
+#/system/bin/resize_ext4 u:object_r:resize_ext4_exec:s0
+# FIXME: invalid context u:object_r:mm-audio-ftm_exec:s0 - Are we missing a dependency?
+#/system/bin/mm-audio-ftm u:object_r:mm-audio-ftm_exec:s0
+# FIXME: invalid context u:object_r:sensors_test2_exec:s0 - Are we missing a dependency?
+#/system/bin/sensors_test u:object_r:sensors_test2_exec:s0
+# FIXME: invalid context u:object_r:wapi_data_file:s0 - Are we missing a dependency?
+#/data/misc/wapi_certificate u:object_r:wapi_data_file:s0
+# FIXME: invalid context u:object_r:adjust_serialno_exec:s0 - Are we missing a dependency?
+#/system/bin/adjust_serialno u:object_r:adjust_serialno_exec:s0
+# FIXME: invalid context u:object_r:sysfs_green:s0 - Are we missing a dependency?
+#/sys/class/leds/blue/brightness u:object_r:sysfs_green:s0
+# FIXME: invalid context u:object_r:sysfs_green:s0 - Are we missing a dependency?
+#/sys/class/leds/green/brightness u:object_r:sysfs_green:s0
+# FIXME: invalid context u:object_r:oem_misc_block_device:s0 - Are we missing a dependency?
+#/dev/block/bootdevice/by-name/misc u:object_r:oem_misc_block_device:s0
+# FIXME: invalid context u:object_r:sysfs_flash:s0 - Are we missing a dependency?
+#/sys/class/leds/led:torch_0/brightness u:object_r:sysfs_flash:s0
+# FIXME: invalid context u:object_r:sysfs_download:s0 - Are we missing a dependency?
+#sys/module/msm_poweroff/parameters/download_mode u:object_r:sysfs_download:s0
+# FIXME: invalid context u:object_r:sysfs_green:s0 - Are we missing a dependency?
+#/sys/devices/soc/soc:gpio-leds/leds/red/brightness u:object_r:sysfs_green:s0
+#/sys/devices/soc/soc:gpio-leds/leds/green/brightness u:object_r:sysfs_green:s0
+# FIXME: invalid context u:object_r:sysfs_charge_full:s0 - Are we missing a dependency?
+#/sys/devices/soc/qpnp-smbcharger-18/power_supply/battery/charge_full u:object_r:sysfs_charge_full:s0
+# FIXME: invalid context u:object_r:sysfs_charge_full_design:s0 - Are we missing a dependency?
+#/sys/devices/soc/qpnp-smbcharger-18/power_supply/battery/charge_full_design u:object_r:sysfs_charge_full_design:s0

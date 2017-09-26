@@ -1,0 +1,5 @@
+#add for goodix
+goodix.fp                                 u:object_r:gx_fpd_service:s0
+# FIXME: invalid context u:object_r:fm_fingerprint_service:s0 - Are we missing a dependency?
+#fm_fingerprint_service                    u:object_r:fm_fingerprint_service:s0
+enrichrcsservice                               u:object_r:radio_service:s0

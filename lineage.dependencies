@@ -1,0 +1,15 @@
+[
+ {
+   "repository": "android_device_qcom_common",
+   "target_path": "device/qcom/common"
+ },
+ {
+   "repository": "android_kernel_lenovo_msm8953",
+   "target_path": "kernel/lenovo/msm8953"
+ },
+ {
+   "repository": "android_vendor_qcom_opensource_cryptfs_hw",
+   "target_path": "vendor/qcom/opensource/cryptfs_hw"
+ }
+]
+
